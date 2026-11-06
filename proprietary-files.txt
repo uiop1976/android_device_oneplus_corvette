@@ -49,6 +49,7 @@ odm/etc/init/init.audio.rc
 odm/lib64/lib_lvacfs.so
 odm/lib64/liblvacfs_wrapper.so
 odm/lib64/libtfa98xx.so
+vendor/lib64/hw/audio.bluetooth_qti.default.so;DISABLE_DEPS
 
 # Audio configs
 odm/etc/mixer_paths.xml
