@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+     OnePlus Ace 3 Pro (corvette) Display & UltraHDR Configuration
+     Panel: BOE X1 (AA567 P 3 A0004 dsc cmd mode panel)
+     Hardware Normal Max DBV: 3332 (~800 nits)
+     Hardware HBM / HDR Max DBV: 4094 (~1600 nits)
+     Note: Dense piecewise-collinear points ensure MonotoneCubicSpline in
+           PhysicalMappingStrategy has exact linear tangents (zero round-trip distortion).
+-->
 <displayConfiguration>
     <densityMapping>
         <density>
@@ -13,15 +21,234 @@
         </density>
     </densityMapping>
 
+    <screenBrightnessMap interpolation="linear">
+        <point>
+            <value>0.0</value>
+            <nits>2.0000</nits>
+        </point>
+        <point>
+            <value>0.01</value>
+            <nits>11.3882</nits>
+        </point>
+        <point>
+            <value>0.02</value>
+            <nits>20.7765</nits>
+        </point>
+        <point>
+            <value>0.05</value>
+            <nits>48.9412</nits>
+        </point>
+        <point>
+            <value>0.10</value>
+            <nits>95.8824</nits>
+        </point>
+        <point>
+            <value>0.15</value>
+            <nits>142.8235</nits>
+        </point>
+        <point>
+            <value>0.20</value>
+            <nits>189.7647</nits>
+        </point>
+        <point>
+            <value>0.25</value>
+            <nits>236.7059</nits>
+        </point>
+        <point>
+            <value>0.30</value>
+            <nits>283.6471</nits>
+        </point>
+        <point>
+            <value>0.35</value>
+            <nits>330.5882</nits>
+        </point>
+        <point>
+            <value>0.40</value>
+            <nits>377.5294</nits>
+        </point>
+        <point>
+            <value>0.45</value>
+            <nits>424.4706</nits>
+        </point>
+        <point>
+            <value>0.50</value>
+            <nits>471.4118</nits>
+        </point>
+        <point>
+            <value>0.55</value>
+            <nits>518.3529</nits>
+        </point>
+        <point>
+            <value>0.60</value>
+            <nits>565.2941</nits>
+        </point>
+        <point>
+            <value>0.65</value>
+            <nits>612.2353</nits>
+        </point>
+        <point>
+            <value>0.70</value>
+            <nits>659.1765</nits>
+        </point>
+        <point>
+            <value>0.75</value>
+            <nits>706.1176</nits>
+        </point>
+        <point>
+            <value>0.80</value>
+            <nits>753.0588</nits>
+        </point>
+        <point>
+            <value>0.83</value>
+            <nits>781.2235</nits>
+        </point>
+        <point>
+            <value>0.845</value>
+            <nits>795.3059</nits>
+        </point>
+        <point>
+            <value>0.849</value>
+            <nits>799.0612</nits>
+        </point>
+        <point>
+            <value>0.85</value>
+            <nits>800.0000</nits>
+        </point>
+        <point>
+            <value>0.851</value>
+            <nits>805.3333</nits>
+        </point>
+        <point>
+            <value>0.86</value>
+            <nits>853.3333</nits>
+        </point>
+        <point>
+            <value>0.88</value>
+            <nits>960.0000</nits>
+        </point>
+        <point>
+            <value>0.92</value>
+            <nits>1173.3333</nits>
+        </point>
+        <point>
+            <value>0.96</value>
+            <nits>1386.6667</nits>
+        </point>
+        <point>
+            <value>1.0</value>
+            <nits>1600.0000</nits>
+        </point>
+    </screenBrightnessMap>
+
     <highBrightnessMode enabled="true">
         <transitionPoint>0.85</transitionPoint>
-        <minimumHdrPercentOfScreen>0.1</minimumHdrPercentOfScreen>
-
         <minimumLux>10000</minimumLux>
         <timing>
-        <timeWindowSecs>1800</timeWindowSecs>  // Window in which we restrict HBM.
-        <timeMaxSecs>300</timeMaxSecs>         // Maximum time of HBM allowed in that window.
-        <timeMinSecs>60</timeMinSecs>          // Minimum time remaining required to switch
-        </timing>                              //   HBM on for.
+            <timeWindowSecs>1800</timeWindowSecs>
+            <timeMaxSecs>300</timeMaxSecs>
+            <timeMinSecs>60</timeMinSecs>
+        </timing>
+        <allowInLowPowerMode>false</allowInLowPowerMode>
+        <minimumHdrPercentOfScreen>0.05</minimumHdrPercentOfScreen>
+        <sdrHdrRatioMap>
+            <point>
+                <sdrNits>2.000</sdrNits>
+                <hdrRatio>4.000</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>10.000</sdrNits>
+                <hdrRatio>6.000</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>50.000</sdrNits>
+                <hdrRatio>8.000</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>200.000</sdrNits>
+                <hdrRatio>8.000</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>800.000</sdrNits>
+                <hdrRatio>2.000</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>1600.000</sdrNits>
+                <hdrRatio>1.000</hdrRatio>
+            </point>
+        </sdrHdrRatioMap>
     </highBrightnessMode>
+
+    <ambientBrightnessChangeThresholds>
+        <brighteningThresholds>
+            <minimum>2</minimum>
+            <brightnessThresholdPoints>
+                <brightnessThresholdPoint>
+                    <threshold>0</threshold><percentage>15</percentage>
+                </brightnessThresholdPoint>
+                <brightnessThresholdPoint>
+                    <threshold>50</threshold><percentage>20</percentage>
+                </brightnessThresholdPoint>
+                <brightnessThresholdPoint>
+                    <threshold>150</threshold><percentage>25</percentage>
+                </brightnessThresholdPoint>
+                <brightnessThresholdPoint>
+                    <threshold>500</threshold><percentage>25</percentage>
+                </brightnessThresholdPoint>
+            </brightnessThresholdPoints>
+        </brighteningThresholds>
+        <darkeningThresholds>
+            <minimum>2</minimum>
+            <brightnessThresholdPoints>
+                <brightnessThresholdPoint>
+                    <threshold>0</threshold><percentage>20</percentage>
+                </brightnessThresholdPoint>
+                <brightnessThresholdPoint>
+                    <threshold>50</threshold><percentage>20</percentage>
+                </brightnessThresholdPoint>
+                <brightnessThresholdPoint>
+                    <threshold>150</threshold><percentage>25</percentage>
+                </brightnessThresholdPoint>
+                <brightnessThresholdPoint>
+                    <threshold>500</threshold><percentage>30</percentage>
+                </brightnessThresholdPoint>
+            </brightnessThresholdPoints>
+        </darkeningThresholds>
+    </ambientBrightnessChangeThresholds>
+
+    <ambientBrightnessChangeThresholdsIdle>
+        <brighteningThresholds>
+            <minimum>2</minimum>
+            <brightnessThresholdPoints>
+                <brightnessThresholdPoint>
+                    <threshold>0</threshold><percentage>15</percentage>
+                </brightnessThresholdPoint>
+                <brightnessThresholdPoint>
+                    <threshold>50</threshold><percentage>20</percentage>
+                </brightnessThresholdPoint>
+                <brightnessThresholdPoint>
+                    <threshold>150</threshold><percentage>25</percentage>
+                </brightnessThresholdPoint>
+                <brightnessThresholdPoint>
+                    <threshold>500</threshold><percentage>25</percentage>
+                </brightnessThresholdPoint>
+            </brightnessThresholdPoints>
+        </brighteningThresholds>
+        <darkeningThresholds>
+            <minimum>2</minimum>
+            <brightnessThresholdPoints>
+                <brightnessThresholdPoint>
+                    <threshold>0</threshold><percentage>20</percentage>
+                </brightnessThresholdPoint>
+                <brightnessThresholdPoint>
+                    <threshold>50</threshold><percentage>20</percentage>
+                </brightnessThresholdPoint>
+                <brightnessThresholdPoint>
+                    <threshold>150</threshold><percentage>25</percentage>
+                </brightnessThresholdPoint>
+                <brightnessThresholdPoint>
+                    <threshold>500</threshold><percentage>30</percentage>
+                </brightnessThresholdPoint>
+            </brightnessThresholdPoints>
+        </darkeningThresholds>
+    </ambientBrightnessChangeThresholdsIdle>
 </displayConfiguration>
