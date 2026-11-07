@@ -1,5 +1,16 @@
 # Display
 persist.vendor.display.pxlw.iris_feature=0x83370780
+ro.vendor.oplus.display.cwb.aod_forbidden=1
+ro.vendor.oplus.display.cwb.ct_range=211,255,0,38
+ro.vendor.oplus.display.cwb.display_id=0
+ro.vendor.oplus.display.cwb.postprocess=1
+ro.vendor.oplus.display.cwb.roi=1
 
 # Radio
 ro.vendor.oplus.regionmark=CN
+
+# Sensors
+ro.vendor.oplus.sensor.brl_receive=true
+ro.vendor.oplus.sensor.high_pwm_rgb=true
+ro.vendor.oplus.sensor.lb_algo=true
+ro.vendor.oplus.sensor.use_black_mode=false
