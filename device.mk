@@ -59,6 +59,13 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/nxp/keymint/generic \
     hardware/nxp/weaver/generic
 
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.fusionlight
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/fusionlight_profile/fusionlight_Main_1_4.json:$(TARGET_COPY_OUT_ODM)/etc/fusionlight_profile/fusionlight_Main_1_4.json
+
 # Touch features
 $(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_HTPR,false)
 

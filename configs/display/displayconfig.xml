@@ -8,6 +8,11 @@
            PhysicalMappingStrategy has exact linear tangents (zero round-trip distortion).
 -->
 <displayConfiguration>
+    <lightSensor>
+        <type>android.sensor.light</type>
+        <name>Oplus FusionLight Sensor</name>
+    </lightSensor>
+
     <densityMapping>
         <density>
             <height>2376</height>
