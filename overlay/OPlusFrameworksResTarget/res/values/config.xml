@@ -44,6 +44,9 @@
          that can be set by the user. -->
     <item type="dimen" name="config_screenBrightnessDozeFloat">0.00366300366</item>
 
+    <!-- If true, the display will be shifted around in ambient mode and system bars to prevent burn-in. -->
+    <bool name="config_enableBurnInProtection">true</bool>
+
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
          for debouncing the light sensor.  Different constants are used to debounce the light sensor
          when adapting to brighter or darker environments.  This parameter controls how quickly
