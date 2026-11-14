@@ -1,2 +1,21 @@
 # IFAA
 sys.oplus.ifaa.model=ONEPLUS-R23814
+
+# Radio
+persist.radio.expected_vonr_state_0=true
+persist.radio.expected_vonr_state_1=true
+persist.radio.nas.scorecalc=1
+persist.sys.oplus.radio.channel_lock_support_status=1
+persist.sys.oplus.radio.ct_auto_ims=0
+persist.sys.oplus.radio.default_sa=true
+persist.sys.oplus.radio.rule_retry_interval=3000
+ro.oplus.radio.auto_nr_mode=3
+ro.oplus.radio.auto_nr_mode_sub=3
+ro.oplus.radio.dual_nr_enabled=true
+ro.oplus.radio.dual_nr_toggle_enabled=true
+ro.oplus.radio.enable_cmcc_nitz=1
+ro.oplus.radio.hide_nr_switch=1
+ro.oplus.radio.lte_rsrp_thresholds=-126,-121,-114,-105,-44
+ro.oplus.radio.modem_reset_time=20
+ro.oplus.radio.sub_slot_support_sa=1
+ro.oplus.radio.wifi_data_power_mode=0

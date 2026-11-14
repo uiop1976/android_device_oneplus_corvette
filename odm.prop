@@ -7,6 +7,9 @@ ro.vendor.oplus.display.cwb.postprocess=1
 ro.vendor.oplus.display.cwb.roi=1
 
 # Radio
+ro.vendor.oplus.radio.cn_ims_register=true
+ro.vendor.oplus.radio.cn_nvbk=TRUE
+ro.vendor.oplus.radio.cn_use_3gpp2=true
 ro.vendor.oplus.regionmark=CN
 
 # Sensors
